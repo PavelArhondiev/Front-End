@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake server response</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: "verdana"
+        }
+
+        #newsContainer{
+            display: block;
+            position: relative;
+
+            width: 50%;
+            margin:80px auto;
+        }
+
+        .PageHeader{
+            position: absolute;
+            float: left;
+            width: 100%;
+            height: 40px;
+            top:0;
+            background-color: #e67e22;
+        }
+
+        h1{
+            font-size: 35px;
+        }
+
+        .CreatedByLabel{
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .DatePostedLabel{
+            font-size: 12px;
+        }
+
+        .ArticleBody{
+            position:relative;
+            float:left;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .ArticleParagraph{
+            display: inline-block;
+        }
+        .ArticleImageWrapper{
+            position: relative;
+            float:left;
+            width: 35%;
+            margin-right: 5%;
+        }
+
+        .ArticleParagraphWrapper{
+            position: relative;
+            float:left;
+            width:60%;
+        }
+
+        #mainArticleImage{
+            width: 100%;
+        }
+
+        .ArticleBody--rightFloatingImage .ArticleImageWrapper,
+        .ArticleBody--rightFloatingImage .ArticleParagraphWrapper{
+            float: right;
+        }
+            
+        .ArticleBody--rightFloatingImage .ArticleImageWrapper{
+            margin: 0 0 0 5%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class='PageHeader'></div>
+    <article id="newsContainer"></article>
+    
+    <script>
+        window.onload = function(){
+            var parametersObj = {};
+
+            let tempArr = [],
+                parametersStr = '';
+            
+            parametersStr = location.search.substring(1).replace(/\+/g, ' ');
+            parametersStr = unescape(parametersStr);
+
+            tempArr = parametersStr.split('&');
+
+            tempArr.forEach(function generateObject(item){
+                let tempArr = item.split('=');
+
+                parametersObj[tempArr[0]] = tempArr[1];
+            });
+
+            console.log(parametersObj);
+            buildArticle(parametersObj);
+        }
+
+        function buildArticle(params){
+            var html = "",
+                imgPosition = params.imagePosition,
+                class_ArticlePosition = imgPosition === 'right' ? "ArticleBody--rightFloatingImage" : "ArticleBody--leftFloatingImage";
+
+            if(params.articleTitle){
+                html +=     "<h1>" + params.articleTitle + "</h1>";
+            }
+
+            if(params.articleCreator){
+                html +=     "<div class='CreatedByLabel'>By: " + params.articleCreator + "</div>";
+            }
+
+            if(params.hasDate){
+                let date = new Date();
+
+                html +=     "<div class='DatePostedLabel'>";
+                html +=         "<div>Date posted</div>";
+                html +=         "<div>" + date.getDay() + "." + (date.getMonth() + 1) + "." + date.getFullYear() +"</div>";
+                html +=     "</div>";
+            }
+
+            html += "<div class='ArticleBody " + class_ArticlePosition + "'>";
+            
+            if(params.mainPicture){
+
+                html +=     "<div class='ArticleImageWrapper'>";
+                html +=         "<img id='mainArticleImage' src='" + params.mainPicture + "'/>";
+                html +=     "</div>";
+            }
+
+            if(params.articleBody){
+                let twoColumns = params.useTwoColumns,
+                    attr_style= twoColumns ? "style='column-count:2;'" : "";
+                html +=     "<div class='ArticleParagraphWrapper'>";
+                html +=         "<p class='ArticleParagraph' " + attr_style + ">" + params.articleBody + "</p>";
+                html +=     "</div>";
+            }
+
+            html += "</div>";
+
+            document.getElementById('newsContainer').innerHTML = html;
+
+        }
+    </script>
+</body>
+
+</html>

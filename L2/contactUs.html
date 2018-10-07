@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    <base href="Images/"/>
+</head>
+<body>
+    <table width="100%">
+        <tbody>
+            <td>
+                <img src="Logo.png"/>
+            </td>
+            <td>
+                <a href="../aboutUs.html">About us</a>
+            </td>
+            <td>
+                <a href="../contactUs.html">Contact us</a>
+            </td>
+        </tbody>
+    </table>
+
+    </br>
+    </br>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <h1>Contact us</h1>
+
+                    <p>
+                        If you have any questions about anything related to our site, please feel free to ask us with the form below:
+                    </p>
+
+                    <form action="../serverAddres/backEndLogicFile.php" method="POST">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label>Your name:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="username" placeholder="Fill your name" required/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        </br>
+                                        <label>Email:</label>
+                                    </td>
+                                        </br>
+                                    <td>
+                                        <input type="email" name="email" placeholder="example@domain.com" required/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Reason for contacting us:</label>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option value="1">I have sugestion</option>
+                                            <option value="2" selected>I need help</option>
+                                            <option value="3">I want to share ideas for improvements</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Your message:</label>
+                                    </td>
+                                    <td>
+                                        <textarea name="messageBody" width="500" height="150" required></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        </br>
+                                        <input type="submit"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        
+                        
+                    </form>
+                </td>
+
+                <td>
+                    <img src="Support.jpg"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+</body>
+</html>
