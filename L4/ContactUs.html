@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div.ContactUs{
+            position: relative;
+            padding:  0% 5%  0% 5%
+        }
+    </style>
+        <iframe src="header.html" style="border:none;" width="100%" height="11%"></iframe>
+        <title>Planets</title>
+</head>
+<body>
+
+        <div class="ContactUs">
+         <img src="Images/contact.jpg"  width="100%" alt="Image saying contact">
+         <br>
+         <br>
+            <form action="testServer.html" method="GET">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Your name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" placeholder="First and last name" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label for="phone">Your phone number</label>
+                            </td>
+                            <td>
+                                <input type="tel" id="phone" placeholder="+888 888 88 88"/>
+                            </td>
+                    <tr>
+                            <td>
+                                    <label for="email">Your e-mail address</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="email" placeholder="example@mail.bg" required/>
+                                </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label for="reason">Please select the reason for this contact form</label>
+                            </td>
+                            <td>
+                                <select id="reason" required>
+                                    <option>I want to suggest a new article</option>
+                                    <option>I want to inform you of new news</option>
+                                    <option>I want to contact with an operator</option>
+                                    <option>Other reason, please state it below</option>
+                                    </select>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label for="addtionalText">Please write your message here:</label>
+                            </td>
+                            <td>
+                                <textarea id="additionalText" rows="4" cols="50" required> </textarea>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label for="picture">If you would like you can send us a picture with your message here:</label>
+                            </td>
+                            <td>
+                                <input type="file" id="picture"/>
+                            </td>
+                    </tr>
+                 </table>
+                 <br>
+                 <input type="submit" value="Submit form"/>
+            </form>
+        </div>
+</body>
+</html>
