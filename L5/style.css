@@ -1,0 +1,31 @@
+body{
+    background-color: #34495e;
+    font-family: Verdana;
+    color: white;
+    
+}
+.card{
+    background-color: darkred;
+}
+table{
+    width: 100%;
+    align-self: center;
+    
+}
+.name{
+    font-size: 20px;
+}
+.valuesText{
+    color: darkblue;
+    font-weight: bold;
+
+}
+img{
+    padding-right: .5cm;
+}
+span{
+    line-height: 20px;
+}
+div{
+    box-align: center;
+}
