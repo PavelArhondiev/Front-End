@@ -11,11 +11,13 @@
         }
 
     </style>
+        <!-- Не му е мястото на <iframe>а тук. Трябва да го сложиш в <body> тагът. В <head> се поставят само тагове, които не се показват пряко на страницата.
+            <title>, <meta> <script>, <link> ....  -->
         <iframe src="header.html" style="border:none;" width="100%" height="11%"></iframe>
         <title>Planets</title>
 </head>
 <body>
-
+    <!-- Това можеш без проблеми да го сложиш <main> а не <div> -->
     <div class="pageMain">
         
         <table width="100%">
@@ -25,12 +27,14 @@
             </tr>
             <tr>
                 <td> 
+                    <!-- Реално <article> не е само параграфа, а и заглавието и картинката отдясно. -->
                     <article>
                         <p>
                         The Solar System[a] is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly,[b] including the eight planets and five dwarf planets as defined by the International Astronomical Union (IAU). Of the objects that orbit the Sun directly, the largest eight are the planets,[c] with the remainder being smaller objects, such as dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly, the moons, two are larger than the smallest planet, Mercury.[d]The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with the majority of the remaining mass contained in Jupiter. The four smaller inner planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer planets are giant planets, being substantially more massive than the terrestrials. The two largest, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the two outermost planets, Uranus and Neptune, are ice giants, being composed mostly of substances with relatively high melting points compared with hydrogen and helium, called volatiles, such as water, ammonia and methane. All eight planets have almost circular orbits that lie within a nearly flat disc called the ecliptic.
                         </p>
                     </article>
 
+                    <!-- Това може да е вътре в <nav> -->
                     <ol>
                         <li>
                             <a href="Mercury.html">Mercury</a> 
