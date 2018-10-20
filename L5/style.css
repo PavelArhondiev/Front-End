@@ -6,6 +6,8 @@ body{
 }
 .card{
     background-color: darkred;
+    line-height: 32px;
+
 }
 table{
     width: 100%;
