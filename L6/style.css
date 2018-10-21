@@ -1,0 +1,46 @@
+body{
+    background-color: #34495e;
+
+    font-family: "Verdana";
+    color:#fff;
+}
+
+#peopleList{
+    width:100%;
+}
+
+.separator{
+    width: 5%;
+}
+
+.personCard{
+    width:30%;
+    height: 150px;
+    background-color: #e74c3c;
+}
+
+.personImageWrapper{
+    width: 200px;
+}
+
+.personCard img{
+    height: 150px;
+}
+
+.personName{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.personDataWrapper{
+    line-height: 32px;
+}
+
+.personDataLabel{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.personDataValue{
+    color:#f1c40f;
+}

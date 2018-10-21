@@ -1,0 +1,83 @@
+body{
+    background-image: url('Images/snow.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#house{
+    position: relative;
+    top: 8%;
+}
+.roof{
+    width: 0; 
+    height: 0; 
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 300px solid darkred;
+    display: inline-block;
+    margin: 10% 0 0 0;
+
+  }
+.roofPos{
+    text-align: center;
+    position: relative;
+}
+.wall{
+    width: 480px;
+    height: 400px;
+    display: inline-block;
+}
+.wallPos{
+    text-align: center;
+    position: relative;
+    background-image: "Images\Bricks.jpg";
+}
+.wall img{
+    width: 480px;
+    height: 400px;
+
+}
+.chimney{
+    width: 80px;
+    height: 150px;
+}
+.chimneyPos{
+    position: absolute;
+    text-align: right;
+    top: 150px;
+    margin-left: 700px;
+    
+}
+.window{
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    border: 12px solid black;
+}
+.windowPos{
+    position: absolute;
+    top:100px;
+    left: 700px;
+}
+.door{
+    width: 100px;
+    height: 200px;
+    background-color: blue;
+    border-radius:  40px 40px 0 0;
+    
+}
+.doorPos{
+    position: absolute;
+    top:100px;
+    left: 200px;
+}
+#hiGif{
+    width: 120px;
+    height: 120px;
+}
+#door{
+    width: 100px;
+    height: 200px;
+}
+.chimney img{
+    height: 250px;
+}
