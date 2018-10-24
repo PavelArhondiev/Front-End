@@ -1,30 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <base target="_parent"> <!-- Това е доста хитро -->
-    </head>
-        
-    <!-- <nav> трябва да се намира в <body> -->
-    <body>
-        <nav>
-            <table class="header" width="100%">
-                <tr>
-                    <td>
-                        <a href="Planets.html">
-                            <img src="Images/Logo.png" alt="Home page button image"/>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="News.html">News</a>
-                    </td>
-                    <td>
-                        <a href="ContactUs.html">Contact Us</a>
-                    </td>
-                    <td>
-                        <a href="Gallery.html">Gallery</a>
-                    </td>
-                </tr>
-            </table>
-        </nav> 
-    </body>
+
+<head>
+    <base target="_parent">
+    <style>
+        .headerWrap {
+            position: relative;
+            width: 100%;
+        }
+
+        #logo {
+            position: absolute;
+            left: 15%;
+            text-align: center;
+            top: 5px;
+        }
+
+        #news {
+            position: absolute;
+            left: 35%;
+            text-align: center;
+            top: 35px;
+        }
+
+        #contact {
+            position: absolute;
+            left: 45%;
+            text-align: center;
+            top: 35px;
+        }
+
+        #gallery {
+            position: absolute;
+            left: 57%;
+            text-align: center;
+            top: 35px;
+        }
+
+        a {
+            color: aliceblue;
+        }
+
+        body {
+            background-color: rgb(41, 128, 185);
+            z-index: 2;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 0;
+            margin: 0;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="headerWrap">
+        <div id="logo">
+            <a href="Planets.html">
+                <img src="Images/Logo.png" alt="Home page button image" />
+            </a>
+        </div>
+        <div id="news">
+            <a href="News.html">News</a>
+        </div>
+        <div id="contact">
+            <a href="ContactUs.html">Contact Us</a>
+        </div>
+        <div id="gallery">
+            <a href="Gallery.html">Gallery</a>
+        </div>
+    </nav>
+</body>
+
 </html>

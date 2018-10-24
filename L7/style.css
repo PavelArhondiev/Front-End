@@ -5,7 +5,10 @@ body{
 }
 #house{
     position: relative;
-    top: 8%;
+    width: 60%;
+    top: 13%;
+    left: 35%;
+    right:35%;
 }
 .roof{
     width: 0; 
@@ -16,20 +19,27 @@ body{
     display: inline-block;
     margin: 10% 0 0 0;
 
+
   }
 .roofPos{
     text-align: center;
-    position: relative;
+    position: absolute;
+    top: 50px;
+    right: 545px;
+    z-index: 2;
 }
 .wall{
     width: 480px;
     height: 400px;
     display: inline-block;
+    
 }
 .wallPos{
     text-align: center;
-    position: relative;
+    position: absolute;
     background-image: "Images\Bricks.jpg";
+    top: 400px;
+    z-index: 1;
 }
 .wall img{
     width: 480px;
@@ -37,14 +47,16 @@ body{
 
 }
 .chimney{
+    height: 200px;
     width: 80px;
-    height: 150px;
+    
 }
 .chimneyPos{
     position: absolute;
     text-align: right;
-    top: 150px;
-    margin-left: 700px;
+    top: 0;
+    left: 120px;
+
     
 }
 .window{
@@ -56,7 +68,7 @@ body{
 .windowPos{
     position: absolute;
     top:100px;
-    left: 700px;
+    left: 40px;
 }
 .door{
     width: 100px;

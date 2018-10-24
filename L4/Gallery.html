@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-        <style>
-                div.gallery{
-                    position: relative;
-                    padding:  0% 5%  0% 5%
-                }
-                td{
-                    padding: 1% 3% 1% 3%
-                }
-        </style>
-                <iframe src="header.html" style="border:none;" width="100%" height="11%"></iframe>
-                <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="Styles/pageLayout.css">
+    <title>Gallery</title>
 
 </head>
-<body >
-    <h1>Gallery</h1>
-        <div class="gallery">
-            <!-- Ако добавиш width="100%" ще заема целия екран таблицата -->
-            <table>
-                <tr>
-                    <td>
-                        <img src="Images/Universe1.jpg" alt="Picture of the universe 1">
-                    </td>
-                    <td>
-                        <img src="Images/Universe2.jpg" alt="Picture of the universe 2">
-                    </td>
-                    <td>
-                        <img src="Images/Universe3.jpg" alt="Picture of the universe 3">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="Images/Universe4.jpg" alt="Picture of the universe 4">
-                    </td>
-                    <td>
-                        <img src="Images/Universe5.jpg" alt="Picture of the universe 5">
-                    </td>
-                    <td>
-                        <img src="Images/Universe6.jpg" alt="Picture of the universe 6">
-                    </td>
-                </tr>
-            </table>
-        </div>
+
+<body>
+    <iframe src="header.html" style="border:none;" id="headerFrame"></iframe>
+    <div class="pageWrap" id="galleryTable">
+        <h1>Gallery</h1>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/Universe1.jpg" alt="Picture of the universe 1">
+                </td>
+                <td>
+                    <img src="Images/Universe2.jpg" alt="Picture of the universe 2">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <img src="Images/Universe4.jpg" alt="Picture of the universe 4">
+                </td>
+                <td>
+                    <img src="Images/Universe5.jpg" alt="Picture of the universe 5">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <img src="Images/Universe3.jpg" alt="Picture of the universe 3">
+                </td>
+                <td>
+                    <img src="Images/Universe6.jpg" alt="Picture of the universe 6">
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
+
 </html>

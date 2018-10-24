@@ -1,0 +1,49 @@
+.pageWrap{
+
+    background-color: white;
+    padding: 0 5%;
+    margin: 0 10%;
+
+}
+body{
+    margin: 80px 0 0 0;
+    background-color: rgb(52, 73, 94);
+    font-family: Verdana;
+
+
+}
+h1{
+    font-family: cursive;
+    font-size: 50px;
+}
+h2{
+    font-family: cursive;
+}
+
+#headerFrame{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+footer{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    clear: both;
+}
+
+
+#pictureOfEarth{
+    border-radius: 120px;
+}
+#galleryTable td{
+    padding: 5px 10px;
+    position: relative;
+    left: 3%;
+    z-index: 1;
+}
+#galleryTable h1{
+    text-align: center;
+}
