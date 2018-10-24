@@ -3,43 +3,31 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-#house{
-    position: relative;
-    width: 60%;
-    top: 13%;
-    left: 35%;
-    right:35%;
-}
+
 .roof{
     width: 0; 
     height: 0; 
     border-left: 300px solid transparent;
     border-right: 300px solid transparent;
     border-bottom: 300px solid darkred;
-    display: inline-block;
     margin: 10% 0 0 0;
-
+    position: absolute;
+    bottom: 400px;
+    left: 585px;
+    z-index: 2;
 
   }
-.roofPos{
-    text-align: center;
-    position: absolute;
-    top: 50px;
-    right: 545px;
-    z-index: 2;
-}
+
 .wall{
     width: 480px;
     height: 400px;
     display: inline-block;
-    
-}
-.wallPos{
-    text-align: center;
     position: absolute;
     background-image: "Images\Bricks.jpg";
-    top: 400px;
+    bottom: 10px;
+    left: 640px;
     z-index: 1;
+    
 }
 .wall img{
     width: 480px;
@@ -47,41 +35,44 @@ body{
 
 }
 .chimney{
-    height: 200px;
-    width: 80px;
-    
-}
-.chimneyPos{
     position: absolute;
-    text-align: right;
-    top: 0;
-    left: 120px;
-
-    
+    bottom: 500px;
+    left: 680px;
+    z-index: 3;
 }
+
 .window{
+    position: absolute;
     width: 120px;
     height: 120px;
     background-color: blue;
     border: 12px solid black;
-}
-.windowPos{
-    position: absolute;
-    top:100px;
+    bottom: 55px;
     left: 40px;
 }
-.door{
-    width: 100px;
-    height: 200px;
-    background-color: blue;
-    border-radius:  40px 40px 0 0;
-    
-}
-.doorPos{
+
+.window2{
     position: absolute;
-    top:100px;
-    left: 200px;
+    width: 100px;
+    height: 100px;
+    left: 150px;
+    top: 200px;
+    z-index: 3;
+    top:80px;
+    left: 280px;
 }
+td{
+    border: 5px solid black;
+    padding: 0;
+    margin: 0;
+}
+table{
+    background-color:rgb(231, 171, 93);
+    width: 100%;
+    height: 100%;
+
+}
+
 #hiGif{
     width: 120px;
     height: 120px;
@@ -89,6 +80,9 @@ body{
 #door{
     width: 100px;
     height: 200px;
+    position: absolute;
+    bottom:0px;
+    right: 100px;
 }
 .chimney img{
     height: 250px;
