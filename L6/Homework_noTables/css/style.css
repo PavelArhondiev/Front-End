@@ -1,0 +1,52 @@
+body{
+    background-color: #34495e;
+    margin:0;
+    padding: 0;
+    font-family: "verdana";
+}
+
+.articleTextContainer{
+    font-size: 14px;
+    width: 55%;
+    display: inline-block;
+}
+
+main{
+    position:relative; 
+    width:60%;
+    margin-left:15%;
+    padding: 100px 5% 40px 5%;
+
+    border-left:1px solid #2c3e50;
+    border-right:1px solid #2c3e50;
+    background-color: #fff;
+}
+
+.breadcrumb{
+    margin:20px 0 40px 0;
+}
+
+.breadcrumb .separator{
+    margin: 0 8px;
+}
+
+.mainArticle{
+    position: relative;
+}
+
+.mainArticleImage{
+    display: block;
+    position: absolute;
+    right:0;
+    top:200px;
+
+}
+
+.galleryWrapper td{
+    width: 30%;
+    padding: 20px;
+}
+
+.galleryWrapper img{
+    width: 100%;
+}

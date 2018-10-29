@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House</title>
+    <link rel="stylesheet" type="text/css" href="house.css"/>
+    <link rel="stylesheet" type="text/css" href="building.css"/>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <div class="building">
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        
+                        <div class="door"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="tree">
+                        <div class="crownSection" style="top:20%; left:7%;"></div>
+                        <div class="crownSection" style="top:20%; right: 7%"></div>
+                        <div class="crownSection" style="top:10%; left:0;" ></div>
+                        <div class="crownSection" style="top:10%; right:0;" ></div>
+                        <div class="crownSection" style="top:-4px;   left:20%;"></div>
+
+                        <div class="stem"></div>
+                    </div>
+                </td>
+
+                <td>
+                    
+                    <div class="house">
+                        <!-- Roof -->
+                        <div class="roof">
+                            <div class="chimney"></div>
+                            <div class="roofBG"></div>
+                        </div>
+
+                        <div class="houseBody">
+                            <!-- Normal flow of inline-block elements -->
+                            <div class="window" id="window1">
+                                <div class="windowSection windowSectionV1"></div>
+                                <div class="windowSection windowSectionV1"></div>
+                                <div class="windowSection windowSectionV1"></div>
+                                <div class="windowSection windowSectionV1"></div>
+                            </div>
+
+                            <!-- Table (with extra CSS property) -->
+                            <div class="window" id="window2">
+                                <table class="WindowTable">
+                                    <tbody>
+                                        <tr>
+                                            <td class="windowSection"></td>
+                                            <td class="windowSection"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="windowSection"></td>
+                                            <td class="windowSection"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Absolute positioning -->
+                            <div class="window" id="window3">
+                                <div class="windowSection windowSectionV2" style="top:0; left:0;"></div>
+                                <div class="windowSection windowSectionV2" style="top:0; right:0;"></div>
+                                <div class="windowSection windowSectionV2" style="bottom:0; left:0;"></div>
+                                <div class="windowSection windowSectionV2" style="bottom:0; right:0;"></div>
+                            </div>
+                            
+                            <!-- Door -->
+                            <div class="door">
+                                <div class="doorNob"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </thead>
+    </table>
+    
+
+    
+
+    
+
+    
+</body>
+</html>

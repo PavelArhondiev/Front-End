@@ -1,0 +1,123 @@
+ .house{
+    margin: 0 0 100px 100px;
+}
+
+/* --- Roof --- */
+
+.roof{
+    position: relative;
+    height: 250px;
+    width: 450px;
+    margin-left: -50px;
+}
+
+.roofBG{
+    position: absolute;
+    bottom: 0;
+    
+    border: 230px solid transparent;
+    border-top-width:0;
+    border-bottom-color: orangered;            
+}
+
+.chimney{
+    position: absolute;
+    height: 60%;
+    width: 10%;
+    right: 20%;
+    bottom: 20%;
+
+    background-color: black;
+}
+
+/* --- House Body --- */
+.houseBody{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    background-color:#f3a977;
+}
+
+.house .window{
+    display: inline-block;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: #b7effc;
+}
+
+.house .windowSection{
+    display: inline-block;
+    height: calc(50% - 2px);
+    border:1px solid #5e4b44;
+}
+
+/* ---- Window 1 ---- */
+
+#window1{
+    top:10%;
+    left: 10%;
+    line-height: 0;
+}
+
+.windowSectionV1{
+    margin-right: -4px;
+    width: calc(50% - 2px);
+}
+
+/* ---- Window 2 ---- */
+
+#window2{
+    top:10%;
+    right:10%;
+}
+
+.WindowTable{
+    height: 100%;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.WindowTable tr{
+    height: 50%;
+}
+
+.WindowTable .windowSection{
+    height: 100%;
+    width: calc(50% - 4px);
+}
+
+/* ---- Window 3 ---- */
+
+    #window3{
+    bottom:10%;
+    left: 10%;
+}
+
+.windowSectionV2{
+    position: absolute;
+    width: calc(50% - 2px);
+}
+
+/* --- Door --- */
+
+.house .door{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    height: 45%;
+    width: 30%;
+
+    border-radius: 50% 50% 0 0;
+    background-color: #82432c;
+}
+
+.doorNob{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}

@@ -1,0 +1,80 @@
+.Grow{
+    background-color: grey;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    transition: transform 1s 0.2s ease-in-out;
+}
+
+.Grow:hover{
+    transform: scale(1.2);
+}
+
+.Fade{
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    transition: 1s 0.2s ease;
+}
+.Fade:hover{
+    color: aliceblue ;
+    background-color: blue ;
+}
+
+.Overline{
+    background-color: grey;
+    height: 50px;
+    width: 150px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    
+}
+.line{
+    background-color: blue;
+    position: absolute;
+    height: 10px;
+    width: 0px;
+    top: 0;
+    left: 0;
+    transition: width 2s 0s ease-in;
+}
+.Overline:hover .line{
+   width:150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

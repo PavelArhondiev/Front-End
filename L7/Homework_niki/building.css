@@ -1,0 +1,58 @@
+.building{
+    display: inline-block;
+    position: relative;
+    height: 500px;
+    width: 300px;
+
+    background-color: gray;
+}
+
+.building .window{
+    display: inline-block;
+    margin: 12px;
+    height: 14%;
+    width: 15%;
+
+    border: 1px solid #000;
+    background-color: #b7effc;
+}
+
+.building .door{
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    height: 20%;
+    width: 30%;
+
+    border-radius: 50% 50% 0 0;
+    border: 2px solid #000;
+    background-color: #82432c;
+}
+
+/* --- Tree --- */
+
+.tree{
+    display: inline-block;
+    position: relative;
+    height: 500px;
+    width: 250px;
+    
+    text-align: center;
+}
+
+.stem{
+    display: inline-block;
+    height: 100%;
+    width: 50px;
+    
+    background-color: #82432c;
+}
+
+.crownSection{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+
+    border-radius: 50%;
+    background-color: green;
+}

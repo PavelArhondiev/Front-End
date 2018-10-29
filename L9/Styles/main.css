@@ -1,0 +1,49 @@
+body{
+    background-color: #181c1f;
+    padding: 0;
+    margin: 0;
+
+}
+.mainPicture{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin-top: 25px;
+    background-image: url("../Images/heavy.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.mainPicture span{
+    margin: auto;  
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 20%;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+.videoF9{
+    margin: auto;  
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 42%;
+    height: 64px;
+    width: 60px;
+    background: url("../Images/icons.png") 0px 64px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

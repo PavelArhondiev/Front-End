@@ -1,0 +1,26 @@
+img{
+    height: 300px;
+    width: 200px;
+}
+.one {
+    position: relative;
+    border: 50px solid;
+    transform: rotate(45deg) scale(0.5);
+    animation: oneanimation 8s 0s infinite,animationtwo 1s 0s infinite; 
+  
+   }
+
+@keyframes oneanimation {
+    0%   {border-color:blue ;top: 0px;left: 0px     }
+    25%  {border-color:red  ;top: 450px;left: 0px   }
+    50%  {border-color:green;top: 450px; left: 1250px}
+    75%  {border-color:red  ;top: 0px;left: 1250px   }
+    100% {border-color:blue ;top: 0px;left: 0       }   
+}
+@keyframes animationtwo{
+    0%  {transform: rotate(0deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100%{transform: rotate(360deg)}
+} 
