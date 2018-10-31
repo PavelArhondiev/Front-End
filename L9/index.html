@@ -7,10 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Styles\main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="Styles\header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Styles\sideInfo.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Styles\detailedPicture.css" />
 
 </head>
 
 <body>
+    <!--VIDEO POPUP...google knows it all-->
+    <a href="#modal" class="modal-open">
+        <div class="videoFH"> </div>
+    </a>
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <a href="#" class="modal__close">&times;</a>
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/Tk338VXcb24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
     <header>
         <nav class="headerNav">
             <span>
@@ -46,31 +59,149 @@
     </header>
     <div class="mainPicture">
         <span>THE WORLD'S<br> MOST POWERFUL<br> ROCKET </span>
-        <div class="videoF9">
-            <a href="video.html"> </a>
-        </div>
     </div>
+    <main class="main">
+        <section class="contentWrap">
+            <article>
+                <div class="topParagraphs">
+                    <h1>FALCON HEAVY</h1>
+                    <p id="FHparagraph1" class="Paragraphs white">Falcon Heavy is the most powerful operational rocket
+                        in the world by a factor
+                        of two. With the
+                        ability to lift into orbit nearly 64 metric tons (141,000 lb)---a mass greater than a 737
+                        jetliner
+                        loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the
+                        payload
+                        of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost. Falcon
+                        Heavy
+                        draws upon the proven heritage and reliability of Falcon 9.</p>
+                    <p id="FHparagraph2" class="Paragraphs white">Its first stage is composed of three Falcon 9
+                        nine-engine cores whose 27
+                        Merlin engines together
+                        generate more than 5 million pounds of thrust at liftoff, equal to approximately eighteen 747
+                        aircraft. Only the Saturn V moon rocket, last flown in 1973, delivered more payload to orbit.
+                        Falcon Heavy was designed from the outset to carry humans into space and restores the
+                        possibility
+                        of flying missions with crew to the Moon or Mars.</p>
+                </div>
+                <div class="topPicture">
+                    <img src="Images/mini-falcon-heavy2.png" id="FHsmallPicture">
+                    <div>
+                        <a href="https://www.spacex.com/about/capabilities">
+                            <p>FALCON HEAVY <span>PRICING</span>
+                                <img src="Images/smallArrow.png" id="smallArrow">
+                            </p>
+                        </a>
+                        <a href="https://www.spacex.com/missions">
+                            <p>SPACEX LAUNCH MANIFEST
+                                <img src="Images/smallArrow.png" id="smallArrow">
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </article>
 
+            <div class="sideInfo">
+                <div class="payload">
+                    <div class="subHeading">PAYLOAD</div>
+                    <p class="Paragraphs white">Falcon Heavy missions will deliver large payloads to orbit inside a
+                        composite fairing, but the
+                        rocket can also carry the Dragon spacecraft.</p>
+                    <span class="dark">COMPOSITE FAIRING
+                        <img src="Images/arrow.png" id="payloadArrow">
+                    </span>
+                    <p class="Paragraphs dark">The composite payload fairing protects satellites during delivery to
+                        destinations in low Earth
+                        orbit (LEO), geosynchronous transfer orbit (GTO) and beyond.</p>
+                </div>
+                <div class="secondStage">
+                    <div class="subHeading">SECOND STAGE</div>
+                    <p class="Paragraphs white">Falcon Heavy draws upon Falcon 9’s proven design, which minimizes stage
+                        separation events and
+                        maximizes reliability. The second-stage Merlin engine, identical to its counterpart on Falcon
+                        9, delivers the rocket’s payload to orbit after the main engines cut off and the first-stage
+                        cores separate. The engine can be restarted multiple times to place payloads into a variety of
+                        orbits including low Earth, geosynchronous transfer orbit (GTO) and geosynchronous orbit (GSO).</p>
+                    <table>
+                        <tr>
+                            <td class="tableWords">ENGINE</td>
+                            <td class="tableWords">BURN TIME</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNumbers">1</td>
+                            <td class="tableNumbers">397 sec</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="tableWords">THRUST IN VACUUM</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="tableNumbers">934 kN <span class="dark smallTableNumbers">210,000
+                                    lbf</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="firstStage">
+                    <div class="subHeading">FIRST STAGE</div>
+                    <p class="Paragraphs white" style="padding-bottom:25px">Three cores make up the first stage of
+                        Falcon Heavy. The side cores, or boosters, are connected
+                        at the base and at the top of the center core’s liquid oxygen tank. The three cores, with a
+                        total of 27 Merlin engines, generate 22,819 kilonewtons (5.13 million pounds) of thrust at
+                        liftoff. Shortly after liftoff the center core engines are throttled down. After the side cores
+                        separate, the center core engines throttle back up to full thrust.</p>
+                    <table>
+                        <tr>
+                            <td class="tableWords">CORES</td>
+                            <td class="tableWords">ENGINES</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNumbers">3</td>
+                            <td class="tableNumbers">27</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="tableWords">THRUST AT SEA LEVEL</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="tableNumbers">22,819 kN <span class="dark smallTableNumbers">5,130,000
+                                    lbf</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="tableWords">THRUST IN VACUUM</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="tableNumbers">24,681 kN <span class="dark smallTableNumbers">5,548,500
+                                    lbf </span></td>
+                        </tr>
+                    </table>
+                    <div class="smallHeadings">BOOSTERS</div>
+                    <p class="Paragraphs dark">Each of Falcon Heavy’s side cores, or boosters, is equivalent to the
+                        first stage of a Falcon 9
+                        rocket with nine Merlin engines. At liftoff, the boosters and the center core all operate at
+                        full thrust. Shortly after liftoff, the center core engines are throttled down. After the side
+                        cores separate, the center core engines throttle back up.
+                    </p>
+                    <div class="smallHeadings">THREE NINE-ENGINE CORES</div>
+                    <p class="Paragraphs dark">Inside each of Falcon Heavy’s three cores is a cluster of nine Merlin
+                        engines. These same engines
+                        power Falcon 9, enabling efficiencies that make Falcon Heavy the most cost-effective heavy-lift
+                        launch vehicle in the world. With a total of 27 first-stage engines, Falcon Heavy has
+                        engine-out
+                        capability that no other launch vehicle can match—under most payload scenarios, it can sustain
+                        more
+                        than one unplanned engine shutdown at any point in flight and still successfully complete its
+                        mission.</p>
+                </div>
+                <img src="Images/falcon-heavy-merlin-engines.png" id="merlinEngines">
+            </div>
+            <!--Here starts the big picture-->
+            <div class="detailedPicture">
+                <img src="Images/falcon-heavy-render.png" alt="Detailed picture of Falcon Heavy" id="FHbigPicture">
+            </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <!--Next section-->
+            <div class="techOverview">
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

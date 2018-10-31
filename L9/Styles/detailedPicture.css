@@ -1,0 +1,17 @@
+
+.detailedPicture{
+    position: relative;
+    float: right;
+    left: 0%;
+    width: 50%;
+    padding-top: 15%;
+    z-index: 2;
+}
+#FHbigPicture{
+    width: 100%;
+}
+
+#merlinEngines{
+    position: relative;
+    top: 210px;
+}
