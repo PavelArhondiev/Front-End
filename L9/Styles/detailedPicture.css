@@ -15,3 +15,65 @@
     position: relative;
     top: 210px;
 }
+.modalPlus{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 8%;
+    right: 75%;
+    background-color: #FFF;
+    opacity: 0;
+    visibility: visible;
+}
+
+#plusSign{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 8%;
+    left: 30%;
+}
+.learnMore{
+    position: relative;
+    top: 30px;
+    left: 15px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(35, 167, 255);
+    text-align: center;
+    line-height: 30px;
+} 
+.modalPlus:target{
+    opacity: 1;
+    visibility: visible;
+}
+.modalPlus{
+    font-family: sans-serif;
+    color: black;
+    text-align: left;
+    padding: 20px;
+
+}
+.closeButton{
+    font-size: 40px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+.modalHeading{
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

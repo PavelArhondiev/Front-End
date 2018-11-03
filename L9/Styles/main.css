@@ -28,7 +28,9 @@ a{
     right: 0;
     top: 20%;
     text-align: center;
-    font-size: 45px;
+    font-size: 50px;
+    font-style: normal;
+    letter-spacing: -1px;
     font-family: 'Brandon Grotesque','brandon-grotesque-n7','brandon-grotesque',Helvetica,sans-serif;
 
 }
@@ -80,7 +82,7 @@ article h1{
     z-index: 2;
 }
 .topPicture p{
-    background-color: #363d42;
+    background-color: #21272b;
     width: 280px;
     height: 40px;
     text-align: center;
@@ -89,7 +91,10 @@ article h1{
     margin-top: 5px;
 }
 .topPicture a{
-    color: blue;
+    color: #3569a4;
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.05em;
 }
 .topPicture div{
     top: 30px;

@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    float: left;
+}
+
+h1{
+    float: left;
+    width: 640px;
+    font-size: 60px;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.PageContentWrapper{
+    width: 970px;
+    margin: auto;
+}
+
+
+/* ---- Hero image ---- */
+
+.HeroImageWrapper{
+    position: relative;
+    float: left;
+    width: 100%;
+
+    background-color: #181c1f;
+}
+
+.HeroImage{
+    width: 100%;
+}
+
+.HeroImage__QuoteWrapper{
+    position: absolute;
+    height: 230px;
+    top: calc(50% - 80px);
+    left: calc(50% - 300px);
+}
+
+.HeroImage__Quote{
+    width: 550px;
+    
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 46px;
+    font-weight: 100;
+}
+
+.HeroImage__PlayButton{
+    height: 64px;
+    width: 64px;
+    margin: 10px auto;
+
+    background-image: url('../images/uiEleemnts.png');
+    background-position: 0 64px;
+}
+
+/* ---- Falcon parameters ---- */
+
+.FalconParameters{
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #181c1f;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.GeneralInfo{
+    float: left;
+    width: 640px;
+    border-top:1px dashed #fff;
+}
+
+.GerelarInfo__Column{
+    float: left;
+    
+    width: calc(50% - 15px);
+    margin-right: 30px;
+}
+
+.GerelarInfo__Column:last-child{
+    margin-right: 0;
+}
+
+.FalconParameters__FalconThumbnail{
+    position: relative;
+    float: left;
+    height: 370px;
+    width: 280px;
+    padding-top:25px;
+
+    margin-left: 50px;
+}
+
+.FalconThumbnail{
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    height: 373px;
+    width: 65px;
+}
+
+.FalconThumbnail__TextBox{
+    display: block;
+    width: 280px;
+    box-sizing: border-box;
+    padding: 10px 20px 10px 70px;
+
+    background-color: #21272b;
+    color: #3569a4;
+    text-decoration: none;
+    font-size:14px;
+    margin-bottom: 5px;
+}
+
+.FalconThumbnail__TextBox .accent{
+    color:#ccc;
+}
+
+.FalconThumbnail__TextBox .arrow{
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+
+    background-image: url('images/');
+}
