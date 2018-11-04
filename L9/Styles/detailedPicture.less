@@ -1,0 +1,85 @@
+@import "variables.less";
+
+.detailedPicture{
+    position: relative;
+    float: right;
+    left: 0%;
+    width: 50%;
+    padding-top: 15%;
+    padding-bottom: 50px;
+    z-index: 2;
+}
+#FHbigPicture{
+    width: 100%;
+}
+
+#merlinEngines{
+    position: relative;
+    top: 210px;
+}
+
+
+#plusSign{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 8%;
+    left: 30%;
+}
+
+.modalPlus{
+    position: absolute;
+    width: 280px;
+    height: 250px;
+    top: 8%;
+    right: 75%;
+    background-color: #FFF;
+    opacity: 0;
+    visibility: hidden;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    .modalHeading{
+        width: 50%;
+        left: 0;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+        text-align: left;
+        border-bottom: 1px @darkColor solid;
+
+    }
+    .learnMore{
+        position: relative;
+        top: 10px;
+        left: 15px;
+        width: 150px;
+        height: 30px;
+        background-color: rgb(35, 167, 255);
+        text-align: center;
+        line-height: 30px;
+    } 
+    .closeButton{
+        font-size: 40px;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+}
+.modalPlus:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

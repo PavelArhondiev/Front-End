@@ -1,132 +1,132 @@
-body{
-    background-color: #181c1f;
-    padding: 0;
-    margin: 0;
-    color: white;
+body {
+  background-color: #181c1f;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Brandon Grotesque', 'brandon-grotesque', Helvetica, sans-serif;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.main{
-    padding: 0 18%;
+.main {
+  padding: 0 18%;
 }
-.mainPicture{
-    position: relative;
-    width: 100%;
-    height: 70%;
-    margin-top: 15px;
-    padding: 0;
-    background-image: url("../Images/heavy.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    
+.mainPicture {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  margin-top: 15px;
+  padding: 0;
+  background-image: url("../Images/heavy.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-.mainPicture span{
-    margin: auto;  
-    position: absolute;
-    left:0;
-    right: 0;
-    top: 20%;
-    text-align: center;
-    font-size: 50px;
-    font-style: normal;
-    letter-spacing: -1px;
-    font-family: 'Brandon Grotesque','brandon-grotesque-n7','brandon-grotesque',Helvetica,sans-serif;
-
+.mainPicture span {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  letter-spacing: -1px;
 }
-
 /* first article */
-article{
-    position: relative;
-    height: 400px;
+article {
+  position: relative;
+  height: 400px;
 }
-article h1{
-    font-size: 60px;
-    font-weight: 100;
-    margin-top: 50px;
-    margin-bottom: 0;
+article h1 {
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 50px;
 }
-.topParagraphs{
-    width: 70%;
-    float: left;
-    position: relative;
-    height: 400px;
-    font-family: Arial,sans-serif;
-    font-weight: normal;
-    line-height: 24px;
-    
+.topParagraphs {
+  width: 70%;
+  float: left;
+  position: relative;
+  height: 400px;
+  font-weight: normal;
+  line-height: 24px;
 }
-#FHparagraph1{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 45%;
+#FHparagraph {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 95%;
+  column-count: 2;
+  color: #9e9e9e;
+  border-top: 2px dotted #9e9e9e;
+  padding-top: 10px;
 }
-#FHparagraph2{
-    position: absolute;
-    bottom: 0;
-    left: 52%;
-    width: 45%
-
+.topPicture {
+  width: 30%;
+  float: right;
+  position: relative;
+  height: 400px;
 }
-.topPicture{
-    width: 30%;
-    float: right;
-    position: relative;
-    height: 400px;
+.topPicture p {
+  background-color: #21272b;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  padding-left: 33px;
+  margin-top: 5px;
 }
-#FHsmallPicture{
-    position: absolute;
-    top: 5%;
-    left: 0;
-    z-index: 2;
+.topPicture a {
+  color: #3569a4;
+  font-size: 12px;
+  letter-spacing: 0.05em;
 }
-.topPicture p{
-    background-color: #21272b;
-    width: 280px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    padding-left: 33px;
-    margin-top: 5px;
+.topPicture div {
+  top: 30px;
+  position: absolute;
+  left: 0;
 }
-.topPicture a{
-    color: #3569a4;
-    font-family: sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.05em;
+#FHsmallPicture {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  z-index: 2;
 }
-.topPicture div{
-    top: 30px;
-    position: absolute;
-    left: 0;
+#smallArrow {
+  position: relative;
+  top: 5px;
 }
-#smallArrow{
-    position: relative;
-    top: 5px;
+.bottomArticleWrap {
+  padding: 0 18%;
+  background: #F7F7F7;
+  display: inline-block;
+  height: 600px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bottomArticleWrap .bottomArticle {
+  color: black;
+  padding: 70px 0;
+}
+.bottomArticleWrap .bottomArticle img {
+  width: 100%;
+}
+.bottomArticleWrap .bottomArticle p {
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: none;
+  color: #222;
+  font-size: 14px;
+  border-top: 2px dotted #9e9e9e;
+  padding-top: 10px;
+}
+.bottomArticleWrap .bottomArticle h2 {
+  font-family: 'Brandon Grotesque', 'brandon-grotesque-n7', 'brandon-grotesque', Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 0.8;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #3a3a3a;
+}
