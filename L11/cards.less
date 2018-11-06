@@ -1,0 +1,87 @@
+@import "variables.less";
+.cardHolder{
+    position: relative;
+    width: 1264.5px;
+    height: 765px;
+    margin:auto;
+    top: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow:@boxShadow;
+    border-radius: 15px;
+    padding-left: 32.5px;
+    padding-top: 32.5px;
+    z-index: 0;
+}
+
+.Cards{
+    position: relative;
+    display: inline-block;
+    width: 135px;
+    height: 175px;
+    margin: 32.5px;
+    box-shadow: @boxShadow;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.faceDown{
+    opacity: 0.7;
+    transition: opacity .4s ease-in-out;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+#Card1{
+    .cardImage(url('Images/Mercury Card.png'));
+}
+#Card2{
+    .cardImage(url('Images/CardBack.png'));
+}
+#Card3{
+    .cardImage(url('Images/CardBack.png'));
+}
+#Card4{
+    .cardImage(url('Images/CardBack.png'));
+}
+#Card5{
+    .cardImage(url('Images/CardBack.png'));
+}
+#Card6{
+    .cardImage(url('Images/CardBack.png'));
+}
+#Card7{
+    .cardImage(url('Images/Venus.png'));
+}
+#Card8{
+    .cardImage(url('Images/Earth.png'));
+}
+#Card9{
+    .cardImage(url('Images/Pluto.png'));
+}
+#Card10{
+    .cardImage(url('Images/Neptune.png'));
+}
+#Card11{
+    .cardImage(url('Images/Mars.png'));
+}
+#Card12{
+    .cardImage(url('Images/Jupiter.png'));
+}
+#Card13{
+    .cardImage(url('Images/CardBack.png'));
+}
+#Card14{
+    .cardImage(url('Images/Saturn.png'));
+}
+#Card15{
+    .cardImage(url('Images/Uranus.png'));
+}
+#Card16{
+    .cardImage(url('Images/CardBack.png'));
+}
+#Card17{
+    .cardImage(url('Images/CardBack.png'));
+}
+#Card18{
+    .cardImage(url('Images/CardBack.png'));
+}

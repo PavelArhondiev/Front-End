@@ -1,0 +1,120 @@
+.cardHolder {
+  position: relative;
+  width: 1264.5px;
+  height: 765px;
+  margin: auto;
+  top: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  padding-left: 32.5px;
+  padding-top: 32.5px;
+  z-index: 0;
+}
+.Cards {
+  position: relative;
+  display: inline-block;
+  width: 135px;
+  height: 175px;
+  margin: 32.5px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.faceDown {
+  opacity: 0.7;
+  transition: opacity 0.4s ease-in-out;
+}
+.faceDown:hover {
+  opacity: 1;
+}
+#Card1 {
+  background-image: url('Images/Mercury Card.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card2 {
+  background-image: url('Images/CardBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card3 {
+  background-image: url('Images/CardBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card4 {
+  background-image: url('Images/CardBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card5 {
+  background-image: url('Images/CardBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card6 {
+  background-image: url('Images/CardBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card7 {
+  background-image: url('Images/Venus.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card8 {
+  background-image: url('Images/Earth.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card9 {
+  background-image: url('Images/Pluto.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card10 {
+  background-image: url('Images/Neptune.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card11 {
+  background-image: url('Images/Mars.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card12 {
+  background-image: url('Images/Jupiter.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card13 {
+  background-image: url('Images/CardBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card14 {
+  background-image: url('Images/Saturn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card15 {
+  background-image: url('Images/Uranus.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card16 {
+  background-image: url('Images/CardBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card17 {
+  background-image: url('Images/CardBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Card18 {
+  background-image: url('Images/CardBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
