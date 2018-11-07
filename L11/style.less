@@ -11,9 +11,9 @@ body{
 }
 .background{
     position: absolute;
-    height: 1050px;
+    height: 100%;
     width: 100%;
-    top: -40px;
+ 
     left: 0;
     background-image: url('Images/Background.png');
     background-size: cover;
@@ -110,4 +110,62 @@ a{
     &:hover #buttonHover{
         opacity: 1;
     }
+}
+
+
+.backgroundGameOver{
+    position: absolute;
+    height: 975px;
+    width: 100%;
+    left: 0;
+    background-image: url('Images/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    z-index: -1;
+}
+.tryAgain{
+    position: relative;
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    top: 450px;   
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #361157;
+    box-shadow:@boxShadow;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #c0392b;
+    opacity: 0.6;
+}
+.gameOver{
+    position: relative;
+    top: 285px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 100px;
+    color: #c0392b;
+    text-shadow: @boxShadow;
+}
+.finalScore{
+    position: relative;
+    top: 340px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #ffffff;
+    text-shadow: @boxShadow;
 }
