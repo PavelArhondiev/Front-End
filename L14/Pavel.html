@@ -9,8 +9,8 @@
 <body>
     <script>
         var numbers = [2,3,4,65,7,8,9,,12,4,16,34,7,457,568,0,-123,-2333,-1,999];  
-        maxValue=0;
-        for(var i=0; i<numbers.length;i++){
+        var maxValue=numbers[0];
+        for(var i=1; i<numbers.length;i++){
             if(numbers[i]>maxValue){
                 maxValue=numbers[i]
             }
@@ -35,9 +35,9 @@
         var evenStudents =[];
         for(var i =0;i<students.length;i++){
             if(i%2==0){
-                evenStudents+=students[i];
+                evenStudents.push(students[i]);
             }else{
-                oddStudents+=students[i];
+                oddStudents.push(students[i]);
             }
         }
         console.log(evenStudents);
