@@ -23,10 +23,10 @@
             <div onclick="Number(0)" class="calcButton calcButtonZero">0</div>
         </div>
         <div class="calcSignWrapper">
-            <div onclick="multi=1,operator('x')" class="calcButton">x</div>
-            <div onclick="plus=1,operator('+')" class="calcButton">+</div>
-            <div onclick="minus=1,operator('-')" class="calcButton">-</div>
-            <div onclick="divide=1,operator('/')" class="calcButton">/</div>
+            <div onclick="operatorSign('x','multi')" class="calcButton">x</div>
+            <div onclick="operatorSign('+','plus')" class="calcButton">+</div>
+            <div onclick="operatorSign('-','minus')" class="calcButton">-</div>
+            <div onclick="operatorSign('/','divide')" class="calcButton">/</div>
             <div onclick="equals()" class="calcButton">=</div>
             <div onclick="reset()" class="calcButton">C</div>
         </div>
@@ -34,55 +34,52 @@
     <script>
         var firstNumber = '',
             secondNumber = '';
-        var plus = 0,
-            multi = 0,
-            minus = 0,
-            divide = 0,
+        var operator = '',
             result = 0;
 
-            function Number(number) {
-                if (plus == 0 && multi == 0 && minus == 0 && divide == 0) {
-                    firstNumber += number;
-                    document.getElementById('calcDisplay').innerHTML += number;
-                } else if (plus == 1 || multi == 1 || minus == 1 || divide == 1) {
-                    secondNumber += number;
-                    document.getElementById('calcDisplay').innerHTML += number;
-                }
-
+        function Number(number) {
+            if (operator == '') {
+                firstNumber += number;
+                displayValue(number);
+            } else if (operator !== '') {
+                secondNumber += number;
+                displayValue(number);
             }
-
-        function operator(sign, signVariable) {
-            document.getElementById('calcDisplay').innerHTML += sign;
-            
         }
+
+        function operatorSign(sign,operatorFlag) {
+            displayValue(sign);
+            operator= operatorFlag;
+        }
+
         function equals() {
-            document.getElementById('calcDisplay').innerHTML += '=';
-            if (plus == 1) {
+            displayValue('=');
+            if (operator === 'plus') {
                 result = (+firstNumber) + (+secondNumber);
-                document.getElementById('calcDisplay').innerHTML += result;
-            } else if (multi == 1) {
+                displayValue(result);
+            } else if (operator === 'multi') {
                 result = (+firstNumber) * (+secondNumber);
-                document.getElementById('calcDisplay').innerHTML += result;
-            } else if (minus == 1) {
+                displayValue(result);
+            } else if (operator == 'minus') {
                 result = (+firstNumber) - (+secondNumber);
-                document.getElementById('calcDisplay').innerHTML += result;
-            } else if (divide == 1) {
+                displayValue(result);
+            } else if (operator === 'divide') {
                 result = (+firstNumber) / (+secondNumber);
-                document.getElementById('calcDisplay').innerHTML += result;
+                displayValue(result);
             }
         }
 
         function reset() {
-            firstNumber='';
-            secondNumber='';
-            plus = 0;
-            multi = 0;
-            minus = 0;
-            divide = 0;
+            firstNumber = '';
+            secondNumber = '';
+            operator = '';
             result = 0;
             document.getElementById('calcDisplay').innerHTML = '';
         }
 
+        function displayValue(displayVariable) {
+            document.getElementById('calcDisplay').innerHTML += displayVariable;
+        }
     </script>
 </body>
 

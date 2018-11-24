@@ -31,28 +31,47 @@
         </div>
     </a>
     <div class="cardHolder">
-        <div class="Cards faceDown" id="Card1"
-        document.getElementById(Card1).style.backgroundImage='url(Images/Jupiter.png)'></div>
-        <div class="Cards faceDown" id="Card2"></div>
-        <div class="Cards faceDown" id="Card3"></div>
-        <div class="Cards faceDown" id="Card4"></div>
-        <div class="Cards faceDown" id="Card5"></div>
-        <div class="Cards faceDown" id="Card6"></div>
-        <div class="Cards faceDown" id="Card7"></div>
-        <div class="Cards faceDown" id="Card8"></div>
-        <div class="Cards faceDown" id="Card9"></div>
-        <div class="Cards faceDown" id="Card10"></div>
-        <div class="Cards faceDown" id="Card11"></div>
-        <div class="Cards faceDown" id="Card12"></div>
-        <div class="Cards faceDown" id="Card13"></div>
-        <div class="Cards faceDown" id="Card14"></div>
-        <div class="Cards faceDown" id="Card15"></div>
-        <div class="Cards faceDown" id="Card16"></div>
-        <div class="Cards faceDown" id="Card17"></div>
-        <div class="Cards faceDown" id="Card18"></div>
+        <div class="Cards faceDown" id="Card1" onclick="cardFlipper('Card1','Mercury')"></div>
+        <div class="Cards faceDown" id="Card2" onclick="cardFlipper('Card2','Venus')"></div>
+        <div class="Cards faceDown" id="Card3" onclick="cardFlipper('Card3','Earth')"></div>
+        <div class="Cards faceDown" id="Card4" onclick="cardFlipper('Card4','Pluto')"></div>
+        <div class="Cards faceDown" id="Card5" onclick="cardFlipper('Card5','Neptune')"></div>
+        <div class="Cards faceDown" id="Card6" onclick="cardFlipper('Card6','Mars')"></div>
+        <div class="Cards faceDown" id="Card7" onclick="cardFlipper('Card7','Jupiter')"></div>
+        <div class="Cards faceDown" id="Card8" onclick="cardFlipper('Card8','Saturn')"></div>
+        <div class="Cards faceDown" id="Card9" onclick="cardFlipper('Card9','Uranus')"></div>
+        <div class="Cards faceDown" id="Card10" onclick="cardFlipper('Card10','Mercury')"></div>
+        <div class="Cards faceDown" id="Card11" onclick="cardFlipper('Card11','Venus')"></div>
+        <div class="Cards faceDown" id="Card12" onclick="cardFlipper('Card12','Earth')"></div>
+        <div class="Cards faceDown" id="Card13" onclick="cardFlipper('Card13','Pluto')"></div>
+        <div class="Cards faceDown" id="Card14" onclick="cardFlipper('Card14','Neptune')"></div>
+        <div class="Cards faceDown" id="Card15" onclick="cardFlipper('Card15','Mars')"></div>
+        <div class="Cards faceDown" id="Card16" onclick="cardFlipper('Card16','Jupiter')"></div>
+        <div class="Cards faceDown" id="Card17" onclick="cardFlipper('Card17','Saturn')"></div>
+        <div class="Cards faceDown" id="Card18" onclick="cardFlipper('Card18','Uranus')"></div>
     </div>
     <script>
-        
+        var startingCard = '';
+
+        function cardFlipper(card, planetName) {
+
+            urlString = "url(Images/" + planetName + ".png)";
+            if (startingCard == '') {
+                startingCard = planetName;
+            }
+            if (startingCard == planetName) {
+                document.getElementById(card).style.backgroundImage = urlString;
+                document.getElementById(card).style.opacity = 1;
+                document.getElementById(card).style.boxShadow = 0;
+
+            } else {
+                document.getElementById(card).style.backgroundImage = "url(Images/CardBack.png";
+                document.getElementById(card).style.opacity = 0.5;
+            }
+
+        }
+
+        var scoreProcessor = 0;
     </script>
 </body>
 
