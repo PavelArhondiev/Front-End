@@ -1,0 +1,43 @@
+1.
+
+	// ----------- CSS --------
+
+.EditPageButton--active{
+    background-color: #f1c40f;
+}
+
+.EditPageButton--active:hover{
+    background-color: #f39c12;
+    color:#fff;
+}
+
+
+2. 	
+
+	// ----------- CSS --------
+
+.EditPeopleWrapper--expanded{
+    right: 0px;
+}
+
+
+
+3.		
+
+	// ----------- HTML --------
+
+<div class="PersonCard">
+	<div class="PersonImage"></div>
+	<div class="PersonName"></div>
+	<div class="personJobTitle"></div>
+	<div class="eMail"></div>
+	<div class="PersonPhoneNumber"></div>
+</div>
+
+
+
+4. 
+
+	// ----------- HTML---------
+
+.PersonCard--active

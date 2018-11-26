@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People contacts</title>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header class="MainPageHeader">
+        <h1>People Archive</h1>
+    </header>
+
+    <main class="PageMainContainer">
+        <nav class="MainPageNav">
+            <div class="EditPageButton" onclick="openEditWrapper()">Edit</div>
+        </nav>
+        <section class="PeopleCardWrapper">
+            <div class="PeopleCardsContainer">No items are added</div>
+        </section>
+        <aside class="EditPeopleWrapper">
+            <div class="TitleInputPair">
+                <label>Name:</label>
+                <input class="EditPeopleInput" id="name"/>
+            </div>
+            <div class="TitleInputPair">
+                <label>Job title:</label>
+                <input class="EditPeopleInput" id="job"/>
+            </div>
+            <div class="TitleInputPair">
+                <label>E-mail:</label>
+                <input class="EditPeopleInput" id="email"/>
+            </div>
+            <div class="TitleInputPair">
+                <label>Phone:</label>
+                <input class="EditPeopleInput" type="number" id="phone"/>
+            </div>
+            <button id="AddOnePerson" onclick="InputDataTransfer()">+ Add person</button>
+        </aside>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phone number validation</title>
+
+    <style>
+        .phoneValidationResult{
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label>Телефонен номер:</label>
+        <input type="text" type="text" class="phoneNumber" onchange="phoneValidator()" />
+    </div>
+    <div>
+        <span>Телефонния номер е:</span>
+        <span class="phoneValidationResult">Невалиден</span>
+    </div>
+    <br />
+    <hr /><br />
+    <div>
+        <div>Номерът тябва да:</div>
+        <ul>
+            <li>Се състои само от цифри</li>
+            <li>Да има не повече от 10 цифри, и не по-малко от 6</li>
+        </ul>
+        <div>Направете проверката, след като потребителя проимени полето (onchange), и запишете резултата в
+            ".phoneValidationResult"</div>
+    </div>
+    <script>
+        function phoneValidator() {
+            var phoneValidationResult = document.querySelector('.phoneValidationResult');
+            var phoneNumberInput = document.getElementsByClassName('.phoneNumber').value;
+
+            console.log(phoneNumberInput);
+            if (phoneNumberInput.lenght > 10 || phoneNumberInput.lenght < 6) {
+                document.getElementsByClassName('.phoneValidationResutl').innerHTML = "Невалиден";
+            } else {
+                document.getElementsByClassName('.phoneValidationResutl').innerHTML = "Валиден";
+            }
+        }
+    </script>
+</body>
+
+</html>

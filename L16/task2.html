@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acordeon</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .acordeonWrapper {
+            height: auto;
+            width: 800px;
+            background-color: #ecf0f1;
+        }
+
+        .acorderonItem {
+            position: relative;
+            float: left;
+            width: 100%;
+        }
+
+        .acordeonHandel {
+            position: relative;
+            float: left;
+            height: 20px;
+            width: calc(100% - 100px);
+            padding: 10px 50px;
+            background-color: #34495e;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .acordeonHandel:hover {
+            background-color: #2c3e50;
+        }
+
+        .acordeonContent {
+            display: none;
+            position: relative;
+            float: left;
+            width: calc(100% - 40px);
+            background-color: #ecf0f1;
+            padding: 20px 20px
+        }
+
+        .acorderonItem.opened .acordeonContent {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="acordeonWrapper" id="acc1">
+        <div class="acorderonItem">
+            <div class="acordeonHandel" onclick="openAcordeon(event.target,'acc1')">Mercury</div>
+            <div class="acordeonContent">
+                Mercury is the smallest and innermost planet in the Solar System. Its orbital period around the Sun of
+                87.97 days is the shortest of all the planets in the Solar System. It is named after the Roman deity
+                Mercury, the messenger of the gods.
+            </div>
+        </div>
+        <div class="acorderonItem">
+            <div class="acordeonHandel" onclick="openAcordeon(event.target,'acc1')">Venus</div>
+            <div class="acordeonContent" >
+                Venus is the second planet from the Sun, orbiting it every 224.7 Earth days. It has the longest
+                rotation period of any planet in the Solar System and rotates in the opposite direction to most other
+                planets. It does not have any natural satellites.
+            </div>
+        </div>
+        <div class="acorderonItem">
+            <div class="acordeonHandel" onclick="openAcordeon(event.target,'acc1')">Earth</div>
+            <div class="acordeonContent" >
+                Earth is the third planet from the Sun and the only object in the Universe known to harbor life.
+                According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago
+            </div>
+        </div>
+    </div>
+    <div class="acordeonWrapper" id="acc2">
+        <div class="acorderonItem">
+            <div class="acordeonHandel" onclick="openAcordeon(event.target,'acc2')">Mercury</div>
+            <div class="acordeonContent" >
+                Mercury is the smallest and innermost planet in the Solar System. Its orbital period around the Sun of
+                87.97 days is the shortest of all the planets in the Solar System. It is named after the Roman deity
+                Mercury, the messenger of the gods.
+            </div>
+        </div>
+        <div class="acorderonItem">
+            <div class="acordeonHandel" onclick="openAcordeon(event.target,'acc2')">Venus</div>
+            <div class="acordeonContent" >
+                Venus is the second planet from the Sun, orbiting it every 224.7 Earth days. It has the longest
+                rotation period of any planet in the Solar System and rotates in the opposite direction to most other
+                planets. It does not have any natural satellites.
+            </div>
+        </div>
+        <div class="acorderonItem">
+            <div class="acordeonHandel" onclick="openAcordeon(event.target,'acc2')">Earth</div>
+            <div class="acordeonContent" >
+                Earth is the third planet from the Sun and the only object in the Universe known to harbor life.
+                According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openAcordeon(target, wrapperID) {
+            var oldElement = document.querySelector('#' + wrapperID + ' .acorderonItem.opened');
+            if (oldElement) {
+                oldElement.classList.remove('opened');
+            }
+
+            target.parentNode.classList.toggle('opened');
+        }
+    </script>
+</body>
+
+</html>
