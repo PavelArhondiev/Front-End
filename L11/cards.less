@@ -24,10 +24,24 @@
     cursor: pointer;
     .cardImage(url(Images/CardBack.png));
 }
+.CardsHidden{
+    position: relative;
+    display: inline-block;
+    width: 135px;
+    height: 175px;
+    margin: 32.5px;
+    border-radius: 10px;
+    animation-name: hidingCard;
+}
+
 .faceDown{
     opacity: 0.7;
     transition: opacity .4s ease-in-out;
     &:hover{
         opacity: 1;
     }
+}
+@keyframes hidingCard{
+    from{visibility: visible,opacity=1;}
+    to{visibility: hidden,opacity=0;}
 }

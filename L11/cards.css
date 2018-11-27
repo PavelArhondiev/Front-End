@@ -24,10 +24,38 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.CardsHidden {
+  position: relative;
+  display: inline-block;
+  width: 135px;
+  height: 175px;
+  margin: 32.5px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: url(Images/CardBack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: hidingCard;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
 .faceDown {
   opacity: 0.7;
   transition: opacity 0.4s ease-in-out;
 }
 .faceDown:hover {
   opacity: 1;
+}
+@keyframes hidingCard {
+  from {
+    opacity:1;
+  }
+  to {
+    opacity:0;
+  }
 }

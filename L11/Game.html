@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="cards.css" />
-    <script type="text/javascript" src="cardGame.js"></script>
+
 </head>
 
 <body>
@@ -31,48 +31,27 @@
         </div>
     </a>
     <div class="cardHolder">
-        <div class="Cards faceDown" id="Card1" onclick="cardFlipper('Card1','Mercury')"></div>
-        <div class="Cards faceDown" id="Card2" onclick="cardFlipper('Card2','Venus')"></div>
-        <div class="Cards faceDown" id="Card3" onclick="cardFlipper('Card3','Earth')"></div>
-        <div class="Cards faceDown" id="Card4" onclick="cardFlipper('Card4','Pluto')"></div>
-        <div class="Cards faceDown" id="Card5" onclick="cardFlipper('Card5','Neptune')"></div>
-        <div class="Cards faceDown" id="Card6" onclick="cardFlipper('Card6','Mars')"></div>
-        <div class="Cards faceDown" id="Card7" onclick="cardFlipper('Card7','Jupiter')"></div>
-        <div class="Cards faceDown" id="Card8" onclick="cardFlipper('Card8','Saturn')"></div>
-        <div class="Cards faceDown" id="Card9" onclick="cardFlipper('Card9','Uranus')"></div>
-        <div class="Cards faceDown" id="Card10" onclick="cardFlipper('Card10','Mercury')"></div>
-        <div class="Cards faceDown" id="Card11" onclick="cardFlipper('Card11','Venus')"></div>
-        <div class="Cards faceDown" id="Card12" onclick="cardFlipper('Card12','Earth')"></div>
-        <div class="Cards faceDown" id="Card13" onclick="cardFlipper('Card13','Pluto')"></div>
-        <div class="Cards faceDown" id="Card14" onclick="cardFlipper('Card14','Neptune')"></div>
-        <div class="Cards faceDown" id="Card15" onclick="cardFlipper('Card15','Mars')"></div>
-        <div class="Cards faceDown" id="Card16" onclick="cardFlipper('Card16','Jupiter')"></div>
-        <div class="Cards faceDown" id="Card17" onclick="cardFlipper('Card17','Saturn')"></div>
-        <div class="Cards faceDown" id="Card18" onclick="cardFlipper('Card18','Uranus')"></div>
+        <div class="Cards faceDown" id="Card1"  data-name='' onclick="cardFlipper(event,'Mercury')"></div>
+        <div class="Cards faceDown" id="Card2"  data-name='' onclick="cardFlipper(event,'Venus')"></div>
+        <div class="Cards faceDown" id="Card3"  data-name='' onclick="cardFlipper(event,'Earth')"></div>
+        <div class="Cards faceDown" id="Card4"  data-name='' onclick="cardFlipper(event,'Pluto')"></div>
+        <div class="Cards faceDown" id="Card5"  data-name='' onclick="cardFlipper(event,'Neptune')"></div>
+        <div class="Cards faceDown" id="Card6"  data-name='' onclick="cardFlipper(event,'Mars')"></div>
+        <div class="Cards faceDown" id="Card7"  data-name='' onclick="cardFlipper(event,'Jupiter')"></div>
+        <div class="Cards faceDown" id="Card8"  data-name='' onclick="cardFlipper(event,'Saturn')"></div>
+        <div class="Cards faceDown" id="Card9"  data-name='' onclick="cardFlipper(event,'Uranus')"></div>
+        <div class="Cards faceDown" id="Card10" data-name='' onclick="cardFlipper(event,'Mercury')"></div>
+        <div class="Cards faceDown" id="Card11" data-name='' onclick="cardFlipper(event,'Venus')"></div>
+        <div class="Cards faceDown" id="Card12" data-name='' onclick="cardFlipper(event,'Earth')"></div>
+        <div class="Cards faceDown" id="Card13" data-name='' onclick="cardFlipper(event,'Pluto')"></div>
+        <div class="Cards faceDown" id="Card14" data-name='' onclick="cardFlipper(event,'Neptune')"></div>
+        <div class="Cards faceDown" id="Card15" data-name='' onclick="cardFlipper(event,'Mars')"></div>
+        <div class="Cards faceDown" id="Card16" data-name='' onclick="cardFlipper(event,'Jupiter')"></div>
+        <div class="Cards faceDown" id="Card17" data-name='' onclick="cardFlipper(event,'Saturn')"></div>
+        <div class="Cards faceDown" id="Card18" data-name='' onclick="cardFlipper(event,'Uranus')"></div>
     </div>
-    <script>
-        var startingCard = '';
 
-        function cardFlipper(card, planetName) {
-
-            urlString = "url(Images/" + planetName + ".png)";
-            if (startingCard == '') {
-                startingCard = planetName;
-            }
-            if (startingCard == planetName) {
-                document.getElementById(card).style.backgroundImage = urlString;
-                document.getElementById(card).style.opacity = 1;
-                document.getElementById(card).style.boxShadow = 0;
-
-            } else {
-                document.getElementById(card).style.backgroundImage = "url(Images/CardBack.png";
-                document.getElementById(card).style.opacity = 0.5;
-            }
-
-        }
-
-        var scoreProcessor = 0;
-    </script>
+        <script type="text/javascript" src="cardGame.js"></script>
 </body>
 
 </html>
