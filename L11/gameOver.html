@@ -10,16 +10,19 @@
 </head>
 
 <body>
+
     <div class="backgroundGameOver">
-            <div class="overlay"></div>
+        <div class="overlay"></div>
     </div>
     <div class="gameOver">GAME OVER</div>
-    <div class="finalScore">Final score: 40</div>
+    <div class="finalScore">Final score: <div id="finalScoreNumber"> 0</div></div>
     <a href="Game.html">
         <div class="tryAgain">TRY AGAIN</div>
     </a>
+    <script>
+        document.getElementById('finalScoreNumber').innerHTML = localStorage.getItem('sessionMaxScore');
+    </script>
 
-    
 </body>
 
 </html>
