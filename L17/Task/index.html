@@ -5,7 +5,7 @@
     <title>People contacts</title>
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <link rel="stylesheet" href="styles.css">
-    
+
 </head>
 <body>
     <header class="MainPageHeader">
@@ -14,7 +14,7 @@
 
     <main class="PageMainContainer">
         <nav class="MainPageNav">
-            <div class="EditPageButton" onclick="openEditWrapper()">Edit</div>
+            <div class="EditPageButton">Edit</div>
         </nav>
         <section class="PeopleCardWrapper">
             <div class="PeopleCardsContainer">No items are added</div>
@@ -22,21 +22,28 @@
         <aside class="EditPeopleWrapper">
             <div class="TitleInputPair">
                 <label>Name:</label>
-                <input class="EditPeopleInput" id="name"/>
+                <input class="EditPeopleInput" id="name" name="firstname"/>
             </div>
             <div class="TitleInputPair">
                 <label>Job title:</label>
-                <input class="EditPeopleInput" id="job"/>
-            </div>
-            <div class="TitleInputPair">
-                <label>E-mail:</label>
-                <input class="EditPeopleInput" id="email"/>
+                <input class="EditPeopleInput" id="job"  name="job"/>
             </div>
             <div class="TitleInputPair">
                 <label>Phone:</label>
-                <input class="EditPeopleInput" type="number" id="phone"/>
+                <input class="EditPeopleInput" id="phone" name="phone" type="number"/>
             </div>
-            <button id="AddOnePerson" onclick="InputDataTransfer()">+ Add person</button>
+            <div class="TitleInputPair">
+                <label>E-mail:</label>
+                <input class="EditPeopleInput" id="email" name="email"/>
+            </div>
+            <div class="TitleInputPair">
+                <label>Check for Random Card</label>
+                <input type="checkbox" id="Random" name="Random"/>
+            </div>
+            <button id="deleteCard">Delete</button>
+            <button id="AddOnePerson">+ Add person</button>
+            <button id="Save">Save changes</button>
+
         </aside>
     </main>
     

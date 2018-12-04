@@ -73,6 +73,15 @@ body{
     color:#34495e;
 }
 
+.EditPageButton--active{
+    background-color: #f1c40f;
+}
+
+.EditPageButton--active:hover{
+    background-color: #f39c12;
+    color:#fff;
+}
+
 .PeopleCardWrapper{
     position:relative;
     float: left;
@@ -93,6 +102,10 @@ body{
     font-weight: bold;
 }
 
+.PeopleCardsContainer--hidden{
+    display: none;
+}
+
 .EditPeopleWrapper{
     position: absolute;
     height: calc(100% - 110px);
@@ -104,17 +117,11 @@ body{
     transition: all 400ms;
     box-shadow: -5px 0 5px #34495e60;
 }
-.EditPeopleWrapper.opened{
-    right:0px;
-}
-.EditPageButton--active{
-    background-color: #f1c40f;
+
+.EditPeopleWrapper--expanded{
+    right: 0px;
 }
 
-.EditPageButton--active:hover{
-    background-color: #f39c12;
-    color:#fff;
-}
 .TitleInputPair{
     position: relative;
     float: left;
@@ -207,4 +214,63 @@ body{
 .personJobTitle{
     font-size: 16px;
     color:#3498db;
+}
+#Save{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 40px;
+    width: 175px;
+    background-color: #f1c40f;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#Save:hover{
+    background-color: #f39c12;
+}
+#deleteCard{
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+    height: 40px;
+    width: 175px;
+    background-color: #f1c40f;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+#deleteCard:hover{
+    background-color: #f39c12;
+}
+#Random{
+    position: absolute;
+    bottom: -30px;
+    right: 100px;
+    height: 40px;
+    width: 175px;
+    background-color: #f1c40f;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+}
+#Random:hover{
+    background-color: #f39c12;
 }

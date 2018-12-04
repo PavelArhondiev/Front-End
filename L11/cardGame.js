@@ -7,6 +7,7 @@ var scoreCount = 0;
 var scoreCountDomNode = document.getElementById('scoreCount');
 var sessionMaxScore=localStorage.getItem('sessionMaxScore')
 var highScore=localStorage.getItem('highScoreKey');
+
 document.getElementById('highScoreCount').innerHTML=highScore;
 
 function cardFlipper(event, planetName) {
@@ -15,26 +16,22 @@ function cardFlipper(event, planetName) {
     if (firstCardClicked == '') {
         firstCardClicked = planetName;
         firstCardID = event.target.id;
-
     } else if (firstCardClicked !== '') {
         secondCardClicked = planetName;
         secondCardID = event.target.id;
 
-        if (firstCardClicked == secondCardClicked) {
-            document.getElementById(firstCardID).classList.add('CardsHidden');
-            document.getElementById(secondCardID).classList.add('CardsHidden');
-            firstCardClicked = '',
-                secondCardClicked = '',
-                firstCardID = '',
-                secondCardID = '';
+        if(firstCardID==secondCardID){
+            showBack();
+        }
+        else if (firstCardClicked == secondCardClicked) {
+            hideDuplicateCards();
             scoreCount += 10;
             localStorage.setItem('sessionMaxScore',scoreCount);
             console.log(localStorage.sessionMaxScore)
-        } else {
-            showBack();
-            console.log(firstCardClicked);
-            console.log(secondCardClicked);
+        }
 
+        else {
+            showBack();
         }
     }
     document.getElementById('scoreCount').innerHTML = scoreCount;
@@ -48,9 +45,12 @@ function cardFlipper(event, planetName) {
     }
 }
 function showFace(event, planetName) {
+    setTimeout(function(){
     urlString = "url(Images/" + planetName + ".png)";
     event.target.style.backgroundImage = urlString;
+},500);
     event.target.classList.remove('faceDown');
+    event.target.classList.add('rotateCard');
 }
 function showBack() {
     document.getElementById(firstCardID).style.backgroundImage = "url(Images/CardBack.png";
@@ -60,8 +60,17 @@ function showBack() {
         firstCardID = secondCardID,
         secondCardID = '';
 }
-document.querySelector('.reset').addEventListener('click', reloadGame);
+function hideDuplicateCards(){
+    document.getElementById(firstCardID).classList.add('CardsHidden');
+    document.getElementById(secondCardID).classList.add('CardsHidden');
+    firstCardClicked = '',
+        secondCardClicked = '',
+        firstCardID = '',
+        secondCardID = '';
+}
 
+
+document.querySelector('.reset').addEventListener('click', reloadGame);
 function reloadGame() {
     location.reload();
 }
